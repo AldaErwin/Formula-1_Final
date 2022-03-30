@@ -1,0 +1,68 @@
+/* Teams.html */
+
+
+.h2-t {
+    font-size: 21px;
+    text-align: center;
+    background-color: rgb(70, 70, 70);
+    width: 85%;
+    color: #fff;
+    margin: 12px auto;
+    padding: 7px;
+
+}
+.main-T{
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(350px, 1fr));
+    grid-gap: 19px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 0px 0px 40px 40px;
+    z-index: 1;
+    margin-top: 49px;
+    margin-bottom: 49px;
+
+    .teams {
+        display: grid;
+        position: relative;
+        grid-template-rows: auto 1fr;
+        border-radius: 15px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        margin: 20px;
+        border: solid 1px rgba(255, 255, 255, 0.5);
+        background-color: rgba(255, 255, 255, 0.1);
+        transition: all 1.2s;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        img {
+            position: relative;
+            width: 100%;
+            border-radius: 15px 15px 0 0;
+            padding: 5px;
+        }
+
+        .details {
+            padding: 20px 10px;
+            display: grid;
+            grid-template-rows: auto 1fr;
+            backdrop-filter: blur(2px);
+            border-radius: 0 0 15px 15px;
+            background-color: rgba(255, 255, 255, 0.1);
+
+            h5 {
+                font-size: 18px;
+                text-align: left;
+                color: #fff;
+            }
+        }
+    }
+}
+
+
+

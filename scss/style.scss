@@ -1,0 +1,22 @@
+@import 'componentes/body';
+@import 'componentes/header';
+@import 'componentes/footer';
+@import 'base/variables';
+@import 'base/extends.scss';
+@import 'base/mixins';
+@import 'paginas/index';
+@import 'paginas/history';
+@import 'paginas/pilotos';
+@import 'paginas/schedule';
+@import 'paginas/teams';
+@import 'paginas/contact';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    @media screen and (max-width: 599px){
+        font-size: 15px;
+    }
+}

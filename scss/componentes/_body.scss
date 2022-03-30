@@ -1,0 +1,21 @@
+@import '../base/extends';
+@import '../base/maps';
+
+.body {
+    background-image: map-get($body, bg-image);
+    background-repeat: map-get($body, bg-repeat);
+    background-size: map-get($body, bg-size);
+    background-attachment: map-get($body, bg-attachment);
+
+    @media screen and (max-width: 800px) and (min-width:600px){
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media screen and (max-width: 599px){
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
